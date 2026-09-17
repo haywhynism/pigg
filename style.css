@@ -1,0 +1,1610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+   
+}
+
+header {
+    background-color: rgb(242, 247, 248);
+    animation: change-bg;
+    animation-timeline: scroll();
+    animation-delay: 0s;
+}
+
+@keyframes change-bg {
+    to {
+        background-color: white;
+        box-shadow: 0px 0px 5px 2px lightgray;
+    }
+}
+
+
+.rotate {
+    animation: rotate 5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+nav {
+    max-width: 92.8%;
+}
+
+.piggy-logo2 {
+    display: none;
+}
+
+
+.menu-links a {
+    display: flex;
+    font-size: 16.5px;
+    text-decoration: none;
+    color: rgb(61, 79, 96);
+    font-weight: 400;
+}
+
+
+.menu-links :nth-child(1):hover .hover-tip {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-links :nth-child(5):hover .hover-tip2 {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.right-side-btn {
+    display: flex;
+    gap: 10px;
+    margin-left: 180px;
+}
+
+.ham-icon {
+    display: none;
+    height: 40px;
+}
+
+.right-side-btn button {
+    padding: 15px 9.7%;
+    text-wrap: nowrap;
+    background-color: transparent;
+    border: 1px solid rgb(28, 28, 29);
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.right-side-btn :nth-child(2) {
+    background-color: rgb(11, 24, 37);
+    color: white;
+}
+
+.hover-tip {
+    background-color: white;
+    padding: 25px 40%;
+    margin-left: 310px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 0px grey;
+    position: absolute;
+    top: 15px;
+    left: -360px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.save-menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 2%;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.save-menu:hover {
+    background-color: #f8fbfb;
+}
+
+.save-menu img {
+    width: 22%;
+}
+
+.save-icon-text :nth-child(1) {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.save-icon-text :nth-child(2) {
+    color: #465768;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-wrap: nowrap;
+}
+
+.hover-tip2 {
+    background-color: white;
+    padding: 25px 40%;
+    margin-left: 310px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 0px grey;
+    position: absolute;
+    max-width: 480px;
+    top: 15px;
+    left: -370px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.resource-menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 2%;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.resource-menu:hover {
+    background-color: #f8fbfb;
+}
+
+.resource-menu img {
+    width: 22%;
+}
+
+.resource-icon-text :nth-child(1) {
+    margin-bottom: 5px;
+}
+
+main {
+    width: 100%;
+    padding: 19px 8.95%;
+    margin-top: 7.4%;
+}
+
+.onboarding {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.98%;
+    flex-wrap: wrap;
+    margin-bottom: 137px;
+}
+
+.about-achieve {
+    max-width: 450px;
+    margin-top: 68px;
+}
+
+.s-report-btn button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0289ff;
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-bottom: 24px;
+    text-wrap: nowrap;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.s-report-btn button:hover {
+    background-color: #060f21;
+    color: white;
+}
+
+.about-achieve h1 {
+    color: #112231;
+    font-size: 47px;
+    margin-bottom: 28px;
+    line-height: 1.2;
+}
+
+.about-achieve p {
+    font-size: 20.5px;
+    line-height: 1.6;
+    max-width: 396px;
+    color: #465768;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-bottom: 28px;
+}
+
+.appDownload-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.appDownload-btn div {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    background-color: #122130;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 12px;
+    gap: 7px;
+    font-size: 16.5px;
+    cursor: pointer;
+}
+
+.apple {
+    margin-bottom: 4px;
+}
+
+.appDownload-btn div:hover {
+    background-color: black;
+    transform: translateY(-7px);
+    transition: 0.5s ease;
+}
+
+.appDownload-btn div>img {
+    height: 22px;
+}
+
+.bounce-img {
+    position: relative;
+}
+
+.bounce-img img {
+    height: 520px;
+    margin-top: 60px;
+    animation: bounce 5s ease infinite;
+}
+
+.overflow-img {
+    position: absolute;
+    display: grid;
+    top: 67px;
+    left: -50px;
+    gap: 33px;
+}
+
+.overflow-img :nth-child(1) {
+    height: 60px;
+}
+
+.overflow-img :nth-child(2) {
+    height: 76px;
+}
+
+.overflow-img :nth-child(3) {
+    height: 70px;
+    margin-top: 69px;
+}
+
+.overflow-img2 {
+    position: absolute;
+    display: grid;
+    top: 40px;
+    right: -60px;
+    gap: 72px;
+}
+
+.overflow-img2 :nth-child(1) {
+    height: 90px;
+}
+
+.overflow-img2 :nth-child(2) {
+    height: 60px;
+}
+
+.overflow-img2 :nth-child(3) {
+    height: 78px;
+    margin-top: 69px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(17.5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.section2 {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.content-001 {
+    display: flex;
+    width: 60%;
+    gap: 24px;
+    align-items: start;
+    justify-content: center;
+}
+
+.lock-img {
+    padding: 12px 0;
+    width: 20%;
+}
+
+.content-001-text :nth-child(1) {
+    color: #112231;
+    font-size: 25px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.content-001-text :nth-child(2) {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3d4f60;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.sec-measures {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sec-measures img {
+    width: 4%;
+}
+
+.sec-measures span {
+    font-size: 30px;
+}
+
+.sec-measures :nth-child(2) {
+    font-size: 17px;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+.section3 {
+    width: 100%;
+}
+
+.section3-content {
+    margin-bottom: 20px;
+}
+
+.section3-content h1 {
+    text-align: center;
+    font-size: 49.6px;
+    font-weight: 550;
+    color: #112231;
+    margin-bottom: 20px;
+}
+
+.section3-content p {
+    text-align: center;
+    font-size: 23.5px;
+    font-weight: lighter;
+    color: rgb(18, 35, 50);
+}
+
+.hover-grid {
+    width: 100%;
+    display: flex;
+    gap: 33px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 3%;
+}
+
+.piggyvest-plan h1 {
+    font-size: 37.5px;
+    color: rgb(0, 51, 153);
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.piggyvest-plan p {
+    font-size: 19.5px;
+    max-width: 300px;
+    line-height: 1.6;
+    color: #3d4f60;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-bottom: 210px;
+    text-align: left;
+}
+
+.piggyvest-plan {
+    width: 41.5%;
+    background-color: white;
+    padding: 30px 2.5%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 0.2px lightgrey;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.piggyvest-plan:hover {
+    background-color: #1060d6;
+    color: white;
+}
+
+.piggyvest-plan:hover h1 {
+    color: white;
+}
+
+.piggyvest-plan:hover span {
+    color: white;
+}
+
+.piggyvest-plan:hover .p-text {
+    color: white;
+}
+
+.piggyvest-plan:hover .turn-downIcon {
+    filter: brightness(0) invert(1);
+}
+
+.piggyvest-plan :nth-child(3) {
+    margin-right: 80px;
+    width: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    transform: translate(100%, 100%);
+    transition: all 0.35s linear;
+    opacity: 0;
+}
+
+.piggyvest-plan:hover .phone-up {
+    transform: translate(0, 0) scale(2);
+    opacity: 1;
+}
+
+.inside-iconText {
+    display: flex;
+    gap: 16px;
+    align-items: end;
+    color: rgb(34, 74, 165);
+}
+
+.inside-iconText>.safe {
+    color: #2295f2;
+}
+
+.inside-iconText>.target {
+    color: #39c377;
+}
+
+.inside-iconText>.piggy {
+    color: #e54a9c;
+}
+
+.inside-iconText>.flex {
+    color: #0b1825;
+}
+
+.inside-iconText>.house {
+    color: #ff783c;
+}
+
+.inside-iconText>span {
+    font-size: 17px;
+    color: black;
+}
+
+.inside-iconText img {
+    width: 6%;
+
+}
+
+.hover-grid>:nth-child(2):hover {
+    background-color: #2295f2;
+}
+
+.hover-grid>:nth-child(3):hover {
+    background-color: #39c377;
+}
+
+.hover-grid>:nth-child(4):hover {
+    background-color: #e54a9c;
+}
+
+.hover-grid>:nth-child(5):hover {
+    background-color: #0b1825;
+}
+
+.hover-grid>:nth-child(6):hover {
+    background-color: #ff783c;
+}
+
+.piggyvest-plan>.fixed-text {
+    color: #2295f2;
+}
+
+.piggyvest-plan>.goal-text {
+    color: #39c377;
+
+}
+
+.piggyvest-plan>.emergency {
+    color: #e54a9c;
+}
+
+.piggyvest-plan>.dollar {
+    color: #0b1825;
+}
+
+.piggyvest-plan>.house {
+    color: #ff783c;
+}
+
+section {
+    background-color: white;
+    width: 100%;
+    padding: 160px 8.95%;
+    font-family: sans-serif;
+}
+
+.section-text :nth-child(1) {
+    font-size: 53.8px;
+    text-align: center;
+    color: #112231;
+    font-weight: 550;
+    margin-bottom: 14px;
+}
+
+.section-text :nth-child(2) {
+    text-align: center;
+    font-size: 24.3px;
+    color: #3d4f60;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-bottom: 60px;
+}
+
+.about-interest {
+    background-color: rgb(121, 20, 229);
+    display: flex;
+    padding: 0px 5%;
+    padding-top: 65px;
+    border-radius: 30px;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.interest-returnes :nth-child(1) {
+    font-size: 37.5px;
+    font-family: 'Montserrat' roboto;
+    word-spacing: -6px;
+    font-weight: 550;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.phone {
+    opacity: 0;
+    display: hidden;
+}
+
+.interest-p {
+    font-size: 20px;
+    color: rgb(254, 214, 241);
+    font-family: sans-serif;
+    max-width: 280px;
+    font-weight: lighter;
+    margin-bottom: 175px;
+}
+
+.learn-about {
+    display: flex;
+    gap: 10px;
+
+}
+
+.learn-about :nth-child(1) {
+    max-width: 4%;
+    height: 30px;
+
+    filter: brightness(0) invert(1);
+    margin-bottom: 10px;
+}
+
+.learn-about :nth-child(2) {
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.about-interest img {
+    width: 42.42%;
+}
+
+.saver-month {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.saver-month :nth-child(1) {
+    font-size: 50.4px;
+    font-weight: 550;
+    color: #112231;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.saver-month :nth-child(2) {
+    text-align: center;
+    font-size: 24.1px;
+    color: #3d4f60;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 62.25%;
+    line-height: 1.3;
+    margin-bottom: 80px;
+}
+
+.saver-month :nth-child(3) {
+    width: 65%;
+    height: 460px;
+    border-radius: 17px;
+    margin-bottom: 220px;
+    border: 10px solid white;
+}
+
+.section-scroll {
+    display: flex;
+    gap: 9%;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.phone-icon {
+    width: 35%;
+    height: 400px;
+    background-color: transparent;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    border: 10px solid #112231;
+    border-bottom: none;
+    padding: 0 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.background {
+    background-color: white;
+    padding: 16px 18px;
+    border-radius: 20px;
+}
+
+.animation-action {
+    animation: goUp 20s linear infinite forwards;
+    
+    transition: all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.animation-action:hover {
+    animation-play-state: paused;
+}
+
+.background>p {
+    font-size: 12.5px;
+    color: #3d4f60;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.comments {
+    display: flex;
+    gap: 15px;
+}
+
+.comments img {
+    height: 35px;
+    border-radius: 30px;
+}
+
+.profile-comments :nth-child(1) {
+    font-size: 14px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.profile-comments :nth-child(2) {
+    font-size: 12.5px;
+    color: #3d4f60;
+    font-family: sans-serif;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+@keyframes goUp {
+    0% {
+        transform: translateY(0px);
+    }
+
+    15% {
+        transform: translateY(-150px);
+    }
+
+    30% {
+        transform: translateY(-300px);
+    }
+
+    45% {
+        transform: translateY(-450px);
+    }
+
+    60% {
+        transform: translateY(-600px);
+    }
+
+    75% {
+        transform: translateY(-750px);
+    }
+
+    90% {
+        transform: translateY(-900px);
+    }
+
+    99% {
+        transform: translateY(-980px);
+    }
+
+    100% {
+        transform: translateY(1130px);
+    }
+}
+
+.subscribers-people {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-images {
+    position: relative;
+}
+
+.profile-images img {
+    width: 20%;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.review-n {
+    padding: 29px 8%;
+    clip-path: circle();
+    background-color: white;
+    position: absolute;
+    color: #3d4f60;
+    font-weight: lighter;
+}
+
+
+.profile-images :nth-child(2) {
+    left: 55px;
+    overflow: hidden;
+}
+
+.profile-images :nth-child(3) {
+    left: 110px;
+}
+
+.profile-images :nth-child(4) {
+    left: 160px;
+}
+
+.who-save {
+    margin-top: 80px;
+    font-weight: 600;
+}
+
+
+.appDownload-btn2 {
+    display: flex;
+    gap: 15px;
+}
+
+.appDownload-btn2 div {
+    border: 1px solid rgb(221, 221, 221);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 12px;
+    gap: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.apple2 {
+    margin-bottom: 4px;
+    filter: invert(1);
+}
+
+.appDownload-btn2 div:hover {
+    transform: translateY(-7px);
+    transition: 0.5s ease;
+}
+
+.appDownload-btn2 div>img {
+    height: 22px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #f2f7f8, #f3f9f6, #ffffff, white, white, white, white, white, white);
+    width: 100%;
+    padding: 19px 8.95%;
+}
+
+.featured p {
+    text-align: center;
+    color: #112231;
+    font-weight: 550;
+    margin-bottom: 16px;
+}
+
+.partner-company-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 160px;
+    padding: 0 10px;
+}
+
+.partner-company-logo img {
+    width: 13%;
+}
+
+.partner-company-logo :nth-child(4) {
+    width: 9%;
+    margin-left: -30px;
+
+}
+
+.partner-company-logo :nth-child(2) {
+    margin-left: -50px;
+
+}
+
+.partner-company-logo :nth-child(3) {
+    margin-left: -40px;
+
+}
+
+.partner-company-logo :nth-child(6) {
+    width: 5.8%;
+
+}
+
+.partner-company-logo :nth-child(5) {
+    width: 13.5%;
+
+}
+
+.footer-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footerlinks-piggyvest {
+    display: flex;
+    gap: 40%;
+}
+
+.piggyvesy-cac {
+    display: flex;
+    flex-direction: column;
+}
+
+.piggyvesy-cac :nth-child(1) {
+    height: 32px;
+    margin-bottom: 25px;
+}
+
+.piggyvesy-cac :nth-child(2) {
+    max-width: 140px;
+    margin-left: 15px;
+
+}
+
+.footer-links {
+    display: flex;
+    gap: 55%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    color: #465768;
+    font-family: sans-serif;
+    font-weight: lighter;
+    gap: 15px
+}
+
+.product p {
+    color: #112231;
+    font-size: 14.5px;
+}
+
+.product a {
+    color: #74818d;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+.product a:hover {
+    color: #4d83e2;
+    transition: 1s;
+}
+
+.footerLeftside {
+    text-align: end;
+    color: #74818d;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon-links {
+    display: flex;
+    gap: 18px;
+    justify-content: right;
+}
+
+.icon-links a {
+    text-decoration: none;
+}
+
+.icon-links a:hover {
+    transform: translateY(-4px);
+    transition: all ease-in 0.8s;
+}
+
+.address-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address {
+    line-height: 1.5;
+}
+
+.email a,
+.number a {
+    text-decoration: none;
+    color: #465768;
+}
+
+.email a:hover,
+.number a:hover {
+    color: #1734ca;
+    transition: 1s;
+}
+
+hr {
+    border: 0.8px solid #eeeeee;
+    margin-bottom: 25px;
+}
+
+.about-peopleinvest {
+    color: #74818d;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 10.6px;
+    width: 52%;
+    line-height: 1.8;
+}
+
+.about-peopleinvest :nth-child(1) {
+    margin-bottom: 35px;
+}
+
+.about-peopleinvest :nth-child(2) {
+    margin-bottom: 65px;
+    color: #073e9e;
+    font-size: 10.8px;
+}
+
+
+
+@media (min-width: 1601px){
+    header {
+        max-width: 100%;
+    }
+
+    nav {
+        width: 1240px;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .onboarding {
+        max-width: 100%;
+        justify-content: center;
+       gap: 300px;
+
+    }
+
+    .section2 {
+        padding: 0 450px;
+    }
+
+    .content-001-text p {
+        max-width: 620px;
+    }
+
+
+    .hover-grid {
+        margin: 0 auto;
+        max-width: 1800px;
+    }
+
+    .piggyvest-plan {
+        width: 30%;
+    }
+
+    .about-interest {
+       max-width: 1375px;
+       margin: 0 auto;
+    }
+
+    .saver-month :nth-child(2) {
+        max-width: 790px;
+    }
+
+    .saver-month :nth-child(3) {
+        max-width: 790px;
+    }
+
+    .phone-icon {
+        max-width: 500px;
+    }
+
+    .section-scroll {
+       max-width: 1250px;
+       margin: 0 auto;
+        gap: 5%;
+    }
+
+    .featured {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .footer-details {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .address {
+        max-width: 300px;
+    }
+
+    .about-peopleinvest {
+        max-width: 2000px;
+        padding: 0 230px;
+        margin-left: 200px;
+    }
+
+     
+}
+@media (max-width:1262px) {
+    header {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    nav {
+        gap: 10px;
+    }
+}
+
+@media (max-width:1700px) {
+    header {
+        padding: 12px 90px;
+
+    }
+
+    nav {
+        max-width: 1240px;
+        margin: 0 auto;
+        gap: 100px;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .right-side-btn button {
+        padding: 18px 20px;
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 180px;
+        height: auto;
+    }
+}
+
+
+
+
+@media (max-width:1099px) {
+    header {
+        padding: 12px 50px;
+    }
+
+    main {
+        padding: 0 50px;
+    }
+
+    nav {
+        width: 1240px;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .right-side-btn button {
+        padding: 18px 20px;
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 180px;
+        height: auto;
+    }
+
+    .onboarding {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .about-achieve {
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .appDownload-btn {
+        justify-content: center;
+    }
+
+    .s-report-btn {
+        justify-content: center;
+    }
+
+    .s-report-btn>button {
+        margin: 0 auto;
+    }
+
+
+    .about-achieve p {
+        max-width: 800px;
+    }
+
+    .about-achieve h1 {
+        margin-top: 20px;
+    }
+
+    .content-001 {
+        gap: 30px;
+    }
+
+    .piggyvest-plan {
+        width: 48.1%;
+    }
+
+    .hover-grid {
+        padding: 40px 0%;
+    }
+
+    .section3-content {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .piggyvest-plan :nth-child(3) {
+        bottom: 50px;
+    }
+
+    .about-interest .phone-cover {
+        display: none;
+    }
+
+    .interest-returnes p {
+        max-width: 95%;
+    }
+
+    .interest-returnes {
+        overflow: hidden;
+    }
+
+    .learn-about :nth-child(3) {
+        width: 36%;
+        transform: translateY(-180px);
+    }
+
+    .phone {
+        margin: 0 auto;
+        opacity: 1;
+    }
+
+    section {
+        padding: 160px 3%;
+    }
+
+    .saver-month :nth-child(2) {
+        width: 790px;
+    }
+
+    .saver-month :nth-child(3) {
+        width: 800px;
+    }
+
+    .phone-icon {
+        width: 50%;
+    }
+
+    .section-scroll {
+        gap: 40px;
+    }
+
+    footer {
+        padding: 0 50px;
+    }
+
+    .partner-company-logo {
+        gap: 20px;
+    }
+
+    .partner-company-logo :nth-child(4) {
+        margin-left: 20px;
+    }
+
+    .partner-company-logo :nth-child(5) {
+        height: 70px;
+    }
+
+    .partner-company-logo img {
+        width: 100%;
+        padding: 0;
+        height: 40px;
+    }
+
+    .footer-details {
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+
+    .footerlinks-piggyvest {
+        width: 100%;
+        gap: 8%;
+    }
+
+    .address {
+        max-width: 200px;
+    }
+
+    .about-peopleinvest {
+        width: 640px;
+    }
+}
+
+@media (max-width: 991px) {
+    .piggyvest-plan {
+        width: 55%;
+    }
+
+    .section3-content {
+        text-wrap: nowrap;
+        max-width: 100%;
+    }
+
+    .saver-month :nth-child(2) {
+        max-width: 700px;
+    }
+
+    .saver-month :nth-child(3) {
+        width: 700px;
+    }
+
+    .section-scroll {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .phone-icon {
+        margin: 0 auto;
+    }
+
+    .who-save {
+        text-align: center;
+        font-size: 29px;
+        max-width: 450px;
+        font-weight: 550;
+    }
+
+
+    .subscribers-people {
+        margin: 0 auto;
+    }
+
+    .appDownload-btn2 {
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 992px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ham-icon {
+        display: block;
+    }
+    
+    .menu-links a {
+        display: none;
+    }
+
+    .right-side-btn {
+        display: none;
+    }
+
+    .left-side .logo img {
+        padding-right: 0;
+        width: 155px;
+    }
+
+    .content-001 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .content-001-text p {
+        text-align: center;
+        width: 540px;
+        
+    }
+
+    .content-001-text :nth-child(2) {
+        text-align: center;
+        font-size: 13px;
+       
+    }
+
+    .sec-measures {
+        justify-content: center;
+    }
+}
+
+/* @media (max-width: 425px) {
+    header {
+        padding: 19px 30px;
+    }
+
+    .piggy-logo {
+       height: 300px;
+    }
+} */
+
+@media (max-width: 425px) {
+    body {
+        width: 300vw;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .piggy-logo2 {
+        display: block;
+        height: 100px;
+    }
+
+    .piggy-logo {
+        display: none;
+    }
+
+    .ham-icon {
+        height: 150px;
+    }
+
+    .onboarding {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+    }
+
+    .s-report-btn button {
+        font-size: 3rem;
+    }
+
+    .about-achieve h1 {
+        font-size: 7rem;
+        width: 700px;
+
+    }
+
+    .about-achieve p {
+        font-size: 2.5rem;
+        width: 700px;
+    }
+
+    .appDownload-btn div {
+        padding: 50px 70px;
+        font-size: 3rem;
+        text-wrap: nowrap;
+    }
+
+    .appDownload-btn div>img {
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .about-achieve {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bounce-img img {
+        height: 1000px;
+    }
+
+    .lock-img img {
+        width: 200px;
+    }
+
+    .content-001-text :nth-child(1) {
+        font-size: 4rem;
+        text-wrap: nowrap;
+    }
+
+    .content-001-text :nth-child(2) {
+        font-size: 3rem;
+        width: 700px;
+    }
+
+    .content-001 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    .sec-measures img {
+        width: 50px;
+    }
+
+    .section3-content h1 {
+        font-size: 5rem;
+    }
+
+    .section3-content p {
+        font-size: 2.5rem;
+        text-wrap: wrap;
+    }
+
+    .piggyvest-plan h1 {
+        font-size: 6rem;
+    }
+
+    .piggyvest-plan p {
+        font-size: 3rem;
+        max-width: 500px;
+    }
+
+    .hover-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .piggyvest-plan {
+        width: 80%;
+    }
+
+    .inside-iconText :nth-child(2) {
+        font-size: 3rem;
+
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 350vw;
+    }
+}
+
+@media (max-width:1024px) {
+    header {
+        padding: 15px 5px;
+    }
+    
+    .logo {
+        margin-right: 50px;
+    }
+
+    /* nav {
+        align-items: center;
+        gap: 2px;
+        justify-content: center;
+    } */
+
+    .menu-links {
+        gap: 25px;
+    }
+
+    .right-side-btn {
+        margin-left: 50px;
+    }
+}
